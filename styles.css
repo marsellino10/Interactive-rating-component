@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Overpass:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Outfit', sans-serif;
+    font-family: 'Overpass', sans-serif;
+    display: flex;
+    min-height: 60vh;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(216, 12%, 8%);
+} 
+
+.container{
+    /*  position: relative; */
+    margin: 30vh auto;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+    /* left: -10%; */
+}
+
+.face,
+.back{
+    width: 360px;
+    background-color: hsl(213, 19%, 18%);
+    color: white;
+    padding: 20px;
+    width: 25em;
+    height: 23em;
+    border-radius: 22px;
+    /* position: absolute; */
+}
+
+.back{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.back .rating{
+    color: hsl(25, 97%, 53%);
+    margin: 15px;
+    background-color: hsl(215, 10%, 23%);
+    padding: 5px 20px;
+    border-radius: 50px;
+}
+
+.star{
+    width: 2.5em;
+    background-color: hsl(215, 10%, 23%);
+    padding: 8px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    height: 2em;
+    margin-bottom: 2em;
+}
+
+.back p{
+    color: hsl(217, 12%, 63%);
+}
+
+.rates{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    display: flex;
+    align-items: center;
+}
+
+.rates button{
+  background-color: hsl(215, 10%, 23%);
+  width: 3rem;
+  height: 3rem;
+  color: hsl(217, 12%, 63%);
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  padding-top: 0.3rem;
+  transition: 0.3s;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.rates button:hover{
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+}
+
+.rates button:focus{
+    background-color: hsl(217, 12%, 63%);
+    color: white;
+}
+
+.submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.submit button{
+    width: 100%;
+    padding: 10px;
+    background-color: hsl(25, 97%, 53%);
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 0.9rem;
+    font-family: inherit;
+    border-radius: 50px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.submit button:hover{
+    background-color: white;
+    color: hsl(25, 97%, 53%);
+}
+
+.hidden{
+    display: none;
+}
